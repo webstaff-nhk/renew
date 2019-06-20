@@ -1,0 +1,23 @@
+.head {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding: 1% 2%;
+    .logo {
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+        img {
+            width: 100%;
+            max-width: 125px;
+        }
+    }
+    .tel {
+        display: table-cell;
+        vertical-align: middle;
+        width: 50%;
+        text-align: right;
+        font-weight: bold;
+        font-size: .9em;
+    }
+}

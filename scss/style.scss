@@ -1,0 +1,36 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import "parts/_reset.scss";
+body {
+    width: 100%;
+    font-size: 12px;
+    color: #444;
+    font-family: 'Noto Sans Japanese', sans-serif;
+    -webkit-text-size-adjust: 100%;
+    .pc {
+        display: none !important;
+    }
+    img.sp {
+        width: 100%;
+        height: auto;
+    }
+    @import "parts/_common.scss";
+    @import "parts/_01_header.scss";
+    @import "parts/_02_nav.scss";
+    @import "parts/_03_aside.scss";
+    @import "parts/_04_footer.scss";
+    @import "parts/_05_content.scss";
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        .sp {
+            display: none !important;
+        }
+        .pc {
+            display: block !important;
+        }
+        a:hover {
+            opacity: .8;
+        }
+        @import "parts/_pc.scss";
+    }
+}

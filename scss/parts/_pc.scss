@@ -1,0 +1,102 @@
+.head {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 10px 10px;
+   .logo {
+       img {
+           max-width: 311px;
+       }
+   }
+   .tel {
+       font-size: 18px;
+       display: table-cell !important;
+   }
+}
+.key {
+    max-width: 1200px;
+    margin: 0 auto;
+    img {
+        width: 100%;
+    }
+}
+.side-nav {
+    ul {
+        max-width: 1200px;
+        margin: 0 auto;
+        li {
+            border-right: none !important;
+            a {
+                font-weight: bold;
+                font-size: 16px;
+                padding: 15px 0;
+                &:hover {
+                    background-color: #eee;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    .cts-wrap {
+        width: 70%;
+        float: left;
+        padding: 40px 10px 40px;
+        .cts-box {
+            .ueda_img {
+                margin-top: 1em;
+                img {
+                    width: 210px;
+                    height: 117px;
+                }
+            }
+            table {
+                td {
+                    dl {
+                        dt {
+                            float: left;
+                            clear: both;
+                            width: 9.5em;
+                        }
+                        dd {
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .aside {
+        width: 30%;
+        float: right;
+        padding: 40px 10px 40px;
+        .btn {
+            padding: 0;
+        }
+    }
+}
+.footer {
+    clear: both;
+    text-align: center;
+    ul {
+        overflow: hidden;
+        display: inline-block;
+        margin-bottom: 1em;
+        li {
+            float: left;
+            &:not(:last-child) {
+                margin-right: 1em;
+            }
+            a {
+                color: #fff;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

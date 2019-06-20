@@ -1,0 +1,280 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+/* reset.scss
+------------------------------------------------------------*/
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, p, a, img, table, th, td, dl, dt, dd, form {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box; }
+
+ul, ul ul, ul ul ul {
+  list-style: none; }
+
+img {
+  vertical-align: bottom; }
+
+section, article, aside, nav, header, footer, hgroup {
+  display: block; }
+
+/* clearfix */
+.clearfix {
+  zoom: 1; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0; }
+
+body {
+  width: 100%;
+  font-size: 12px;
+  color: #444;
+  font-family: 'Noto Sans Japanese', sans-serif;
+  -webkit-text-size-adjust: 100%; }
+body .pc {
+  display: none !important; }
+body img.sp {
+  width: 100%;
+  height: auto; }
+body h1 {
+  font-size: 1.3em;
+  border-left: 3px solid #22b573;
+  margin-bottom: 5%; }
+body h1 span {
+  display: block;
+  padding: 2px 0 2px 5px; }
+body h1 span small {
+  padding-left: 5px;
+  font-size: .6em; }
+body h2 {
+  font-size: 1.1em;
+  border-bottom: 1px dotted #22b573;
+  margin-bottom: 3%; }
+body h3 {
+  font-size: 1em;
+  color: #22b573; }
+body .mface-container {
+  margin: 0 !important;
+  padding: 0 !important; }
+body #mface-titlebar {
+  display: none !important; }
+body .mface-text {
+  margin: 0 0 .5em !important;
+  padding: 0 !important; }
+body .head {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding: 1% 2%; }
+body .head .logo {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%; }
+body .head .logo img {
+  width: 100%;
+  max-width: 125px; }
+body .head .tel {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  text-align: right;
+  font-weight: bold;
+  font-size: .9em; }
+body .side-nav ul {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  border-bottom: 2px solid #22b573; }
+body .side-nav ul li {
+  display: table-cell;
+  text-align: center; }
+body .side-nav ul li:not(:last-child) {
+  border-right: 1px solid #ccc; }
+body .side-nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: .7em;
+  padding: 10px 1%;
+  color: #444;
+  line-height: 1.2; }
+body .aside .btn {
+  padding: 0 2%;
+  margin-bottom: 3%; }
+body .aside .btn a {
+  text-decoration: none;
+  display: table;
+  width: 100%;
+  height: 4em;
+  text-align: center;
+  background-color: #999;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold; }
+body .aside .btn a span {
+  vertical-align: middle;
+  display: table-cell; }
+body .aside .btn a:after {
+  content: ">";
+  font-weight: bold;
+  font-size: 20px;
+  display: table-cell;
+  vertical-align: middle; }
+body .aside .aside-about {
+  padding: 3em 0;
+  background-color: #22b573;
+  color: #fff;
+  text-align: center;
+  position: relative; }
+body .aside .aside-about:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  border-width: 18px 18px 0 18px;
+  border-color: #22b573 transparent transparent transparent;
+  border-style: solid;
+  bottom: -17px;
+  left: 50%;
+  margin-left: -18px; }
+body .aside .aside-about strong {
+  display: block;
+  font-size: 1.4em;
+  margin-bottom: .3em; }
+body .aside .bnr {
+  text-align: center; }
+body .aside .bnr img {
+  width: 50%;
+  max-width: 150px;
+  height: auto; }
+body .footer {
+  padding: 3em 0;
+  background-color: #444;
+  color: #fff; }
+body .footer .copy {
+  text-align: center; }
+body .cts-wrap {
+  padding: 3% 2% 10%; }
+body .cts-wrap .cts-box {
+  margin-bottom: 2em;
+  line-height: 1.8; }
+body .cts-wrap .cts-box p {
+  margin-bottom: 1em; }
+body .cts-wrap .cts-box .ueda_img {
+  text-align: right; }
+body .cts-wrap .cts-box .ueda_img img {
+  width: 120px;
+  height: auto; }
+body .cts-wrap .cts-box ol {
+  margin-left: 1.5em;
+  margin-bottom: 1em; }
+body .cts-wrap .cts-box table, body .cts-wrap .cts-box th, body .cts-wrap .cts-box td {
+  border: 1px solid #999;
+  border-collapse: collapse; }
+body .cts-wrap .cts-box table {
+  width: 100%;
+  margin-bottom: 1em; }
+body .cts-wrap .cts-box table th {
+  padding: .5em 1em;
+  background-color: #ccc; }
+body .cts-wrap .cts-box table td {
+  padding: .5em 1em; }
+body .cts-wrap .cts-box table td dl {
+  overflow: hidden; }
+body .cts-wrap .cts-box table td dl dt {
+  font-weight: bold; }
+body .cts-wrap .cts-box .map {
+  text-align: center;
+  border: 1px dashed #ccc;
+  padding: 1em; }
+body .cts-wrap .cts-box .map img {
+  width: 100%;
+  height: auto;
+  max-width: 473px; }
+body .cts-wrap .new {
+  overflow: hidden;
+  line-height: 1.8; }
+body .cts-wrap .new dt {
+  float: left;
+  clear: both;
+  width: 6em; }
+body .cts-wrap .new dd {
+  float: left; }
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 14px; }
+  body .sp {
+    display: none !important; }
+  body .pc {
+    display: block !important; }
+  body a:hover {
+    opacity: .8; }
+  body .head {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 10px; }
+  body .head .logo img {
+    max-width: 311px; }
+  body .head .tel {
+    font-size: 18px;
+    display: table-cell !important; }
+  body .key {
+    max-width: 1200px;
+    margin: 0 auto; }
+  body .key img {
+    width: 100%; }
+  body .side-nav ul {
+    max-width: 1200px;
+    margin: 0 auto; }
+  body .side-nav ul li {
+    border-right: none !important; }
+  body .side-nav ul li a {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px 0; }
+  body .side-nav ul li a:hover {
+    background-color: #eee;
+    opacity: 1; }
+  body main {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; }
+  body main .cts-wrap {
+    width: 70%;
+    float: left;
+    padding: 40px 10px 40px; }
+  body main .cts-wrap .cts-box .ueda_img {
+    margin-top: 1em; }
+  body main .cts-wrap .cts-box .ueda_img img {
+    width: 106px;
+    height: 65px; }
+  body main .cts-wrap .cts-box table td dl dt {
+    float: left;
+    clear: both;
+    width: 9.5em; }
+  body main .cts-wrap .cts-box table td dl dd {
+    float: left; }
+  body main .aside {
+    width: 30%;
+    float: right;
+    padding: 40px 10px 40px; }
+  body main .aside .btn {
+    padding: 0; }
+  body .footer {
+    clear: both;
+    text-align: center; }
+  body .footer ul {
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 1em; }
+  body .footer ul li {
+    float: left; }
+  body .footer ul li:not(:last-child) {
+    margin-right: 1em; }
+  body .footer ul li a {
+    color: #fff;
+    text-decoration: none; }
+  body .footer ul li a:hover {
+    text-decoration: underline; } }

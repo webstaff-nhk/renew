@@ -1,0 +1,66 @@
+.cts-wrap {
+    padding: 3% 2% 10%;
+    .cts-box {
+        margin-bottom: 2em;
+        line-height: 1.8;
+        p {
+            margin-bottom: 1em;
+        }
+        .ueda_img {
+            text-align: right;
+            img {
+                width: 120px;
+                height: auto;
+            }
+        }
+        ol {
+            margin-left: 1.5em;
+            margin-bottom: 1em;
+        }
+        table, th, td {
+            border: 1px solid #999;
+            border-collapse:collapse;
+        }
+        table {
+            width: 100%;
+            margin-bottom: 1em;
+            th {
+                padding: .5em 1em;
+                background-color: #ccc;
+            }
+            td {
+                padding: .5em 1em;
+                dl {
+                    overflow: hidden;
+                    dt {
+                        font-weight: bold;
+                    }
+                    dd {
+                    }
+                }
+            }
+        }
+        .map {
+            text-align: center;
+            border: 1px dashed #ccc;
+            padding: 1em;
+            img {
+                width: 100%;
+                height: auto;
+                max-width: 473px;
+            }
+        }
+    }
+    .new {
+        overflow: hidden;
+        line-height: 1.8;
+        dt {
+            float: left;
+            clear: both;
+            width: 6em;
+        }
+        dd {
+            float: left;
+        }
+    }
+}
